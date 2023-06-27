@@ -1,6 +1,6 @@
 {
   "name": "add-param-from-cookie-cf",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Add param from cookie to query to create separate cache",
   "main": "index.ts",
   "scripts": {
