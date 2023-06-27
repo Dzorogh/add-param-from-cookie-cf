@@ -1,9 +1,9 @@
 import { parse } from 'cookie'
 
-export async function addParamFromCookie(request: Request, cookieName: string) {
+export async function addParamFromCookie(request: Request, cookieName: string, defaultValue = '') {
   let url = new URL(request.url)
 
-  const cookieValue = getCookie(request, cookieName)
+  const cookieValue = getCookie(request, cookieName) ?? defaultValue
 
   url = await addCookieToQuery(url, cookieName, cookieValue)
 
